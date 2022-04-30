@@ -60,7 +60,7 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
 ![attempt_opt3.png](https://github.com/GrahamNeal13/Neural_Network_Charity_Analysis/blob/main/Images/attempt_opt3.png)
 
    Unfortunately, I was not able to increase accuracy beyond 72-73% and loss below 0.55.  Now some improvements that I would recommend for future models would be to increase the number of hidden layers using the activation function "ReLU" as this performed in categoriig the data better than the "Tanh" attempt.  I would also suggest the neuron count be 80 in the first layer, 40 neurons in the second layer, and 10 to 20 neurons in the third layer.  This should result in a accuracy score that achieve the target model performance of 75%.  This will filter and categorize the data quickly and should result in a more accurate overall model without overfitting.  
-   
+   I would also recommend using a Random Forest model as an alternative.  Random forest classifiers are a type of ensemble learning model that combines multiple smaller models into a more robust and accurate model. Random forest models use a number of weak learner algorithms (decision trees) and combine their output to make a final classification (or regression) decision. Structurally speaking, random forest models are very similar to their neural network counterparts.  Since both output and feature selection of random forest models are easy to interpret, and they can easily handle outliers and nonlinear data.  Which would be a better fit for the dataset.
    
 
         
