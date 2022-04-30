@@ -45,7 +45,7 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
  
  ## Summary: 
  
-    ### Optimizing the model
+   ### Optimizing the model
  
    Now this is a good start to begin experimenting with activation functions and hidden layers.  In the first attempt I used the frame work of the previous trial model.  Instead of using 80/40 I increase the second layer yet again to 50, but still used the ReLU/Sigmoid combination to see if this would increase performance.  
     
