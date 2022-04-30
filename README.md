@@ -31,11 +31,34 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
         
     - What variable(s) are considered to be the features for your model?
     
-        The features of the model are 
+        The features of the model are listed in the cell block for the "Generate our categorical variable lists," which are the following: "Application_Type", "Affiliation", "Use_Case", "Oranization", "Income_Amt", "Special_Considerations"
         
     - What variable(s) are neither targets nor features, and should be removed from the input data?
     
         The 'EIN' and 'NAME' are both non-beneficial columns and are dropped from the dataframe.  
+        
+    + Compiling, Training, and Evaluating the Model - 
+    
+    - Using the provide code sample I was able to set a base of two hidden layers with 80 neurons in the first layer and 30 in the second layer.  However I chose to increase the second layer by 10 to improve the model accuracy for the first attempt in the "AlphabetSoupCharity.IPYNB" file.  Then I used the "ReLU" activation funcition in the two hidden layers and "Sigmoid" for the output activation function.  This gave me the following Loss/Accuracy return:
+        
+        Loss: 0.5574895739555359, Accuracy: 0.7240816354751587
+        
+    Now this is a good start to begin experimenting with activation functions and hidden layers.  In the first attempt I used the frame work of the previous trial model.  Instead of using 80/40 I increase the second layer yet again to 50, but still used the ReLU/Sigmoid combination to see if this would increase performance.  
+    
+![attempt_opt1.png](https://github.com/GrahamNeal13/Neural_Network_Charity_Analysis/blob/main/Images/attempt_opt1.png)
+
+   But we can see from the image above that the accuracy and loss do not really improve.  This enboldened me to really change the activation functions but still use the 80/40 neuron count in the hidden layers.  So I changed the activation funcitions to "Tanh" for both hidden layers and the output layer.  Thinking this would help to find the clusters if the data may be spiraled.  
+   
+![attempt_opt2.png](https://github.com/GrahamNeal13/Neural_Network_Charity_Analysis/blob/main/Images/attempt_opt2.png)
+
+   Yet again this did not show any real improvement which lead me to remember that ReLU had a similiar activation function "Leaky ReLU" whereby negative input values will return very small negative values.  I came to the conclusion that combining the two of these functions might result in a higher performing model.  So my third attempt was to use the neuron count 80/40 on the hidden layers with Leaky ReLU activation functions applied.  In the output layer I used the ReLU activation function and got these results:
+   
+![attempt_opt3.png](https://github.com/GrahamNeal13/Neural_Network_Charity_Analysis/blob/main/Images/attempt_opt3.png)
+
+   Unfortunately, I was not able to increase accuracy beyond 72-73% and loss below 0.55.  Now some improvements that I would recommend for future models would be to increase the number of hidden layers using the activation function "ReLU" as this performed in categoriig the data better than the "Tanh" attempt.  I would also suggest the neuron count be 80 in the first layer, 40 neurons in the second layer, and 10 to 20 neurons in the third layer.  This should result in a accuracy score that achieve the target model performance of 75%.  This will filter and categorize the data quickly and should result in a more accurate overall model without overfitting.  
+   
+   
+
         
 
 
