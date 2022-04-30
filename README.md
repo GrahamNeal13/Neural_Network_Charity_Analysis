@@ -26,9 +26,21 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
 
   + Data Preprocessing -
     - What variable(s) are considered the target(s) for your model?
+    
         The target for the model is the "IS_Successful" column.
+        
     - What variable(s) are considered to be the features for your model?
+    
         The features of the model are 
+        
     - What variable(s) are neither targets nor features, and should be removed from the input data?
+    
         The 'EIN' and 'NAME' are both non-beneficial columns and are dropped from the dataframe.  
+        
+
+
+
+
+
+
 
