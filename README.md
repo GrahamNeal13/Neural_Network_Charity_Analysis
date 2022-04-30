@@ -42,8 +42,12 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
     - Using the provide code sample I was able to set a base of two hidden layers with 80 neurons in the first layer and 30 in the second layer.  However I chose to increase the second layer by 10 to improve the model accuracy for the first attempt in the "AlphabetSoupCharity.IPYNB" file.  Then I used the "ReLU" activation funcition in the two hidden layers and "Sigmoid" for the output activation function.  This gave me the following Loss/Accuracy return:
         
         Loss: 0.5574895739555359, Accuracy: 0.7240816354751587
-        
-    Now this is a good start to begin experimenting with activation functions and hidden layers.  In the first attempt I used the frame work of the previous trial model.  Instead of using 80/40 I increase the second layer yet again to 50, but still used the ReLU/Sigmoid combination to see if this would increase performance.  
+ 
+ ## Summary: 
+ 
+    ### Optimizing the model
+ 
+   Now this is a good start to begin experimenting with activation functions and hidden layers.  In the first attempt I used the frame work of the previous trial model.  Instead of using 80/40 I increase the second layer yet again to 50, but still used the ReLU/Sigmoid combination to see if this would increase performance.  
     
 ![attempt_opt1.png](https://github.com/GrahamNeal13/Neural_Network_Charity_Analysis/blob/main/Images/attempt_opt1.png)
 
